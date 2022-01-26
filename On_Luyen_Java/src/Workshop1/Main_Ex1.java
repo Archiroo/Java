@@ -27,6 +27,8 @@ public class Main_Ex1 {
             System.out.println("OUTPUT: " + ex1.getCode());
         }
         if(tc==2){
+            System.out.print("Enter new fan price: ");
+            ex1.setPrice(sc.nextDouble());
             System.out.println("OUTPUT: " + ex1.getPrice());
         }
     }
