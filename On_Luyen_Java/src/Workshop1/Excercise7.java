@@ -9,7 +9,7 @@ package Workshop1;
  *
  * @author Admin
  */
-public class Excercise6 {
+public class Excercise7 {
     String ID, Name, Country, Color;
     double Price;
 
@@ -53,10 +53,8 @@ public class Excercise6 {
         this.Price = Price;
     }
 
-    public Excercise6() {
-    }
-
-    public Excercise6(String ID, String Name, String Country, String Color, double Price) {
+    
+    public Excercise7(String ID, String Name, String Country, String Color, double Price) {
         this.ID = ID;
         this.Name = Name;
         this.Country = Country;
@@ -64,9 +62,9 @@ public class Excercise6 {
         this.Price = Price;
     }
     
-    public double Discount(){
+     public double Discount(){
        double gia;
-       if("Red".equals(this.Color)){
+       if("Red".equals(this.Color) || "Pastel".equals(this.Color)){
            gia = Price*0.2;
        }
        else
@@ -75,4 +73,8 @@ public class Excercise6 {
        }
        return gia;
     }
+     
+     public double NewPrice(){
+         return (Price- Discount());
+     }
 }
