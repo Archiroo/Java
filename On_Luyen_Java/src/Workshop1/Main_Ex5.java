@@ -41,7 +41,7 @@ public class Main_Ex5 {
     //Output
     public static void Output(){
         System.out.println("List of teacher:");
-        System.out.println("ID" + "\t" +"Name" + "\t" +"Gender" + "\t" +"Address" + "\t" + "\t" +"Grading" +"\t" +"Salary");
+        System.out.println("ID" + "\t" +"Name" + "\t" +"Gender" + "\t" +"Address" + "\t" +"Grading" +"\t" +"Salary");
         for (int i = 0; i < n; i++) {
             System.out.println(ex5[i].getID()+"\t"+ex5[i].getName()+"\t"+ex5[i].getGender()+"\t"+ex5[i].getAddress() +"\t"+ex5[i].getGrading()+"\t"+ex5[i].Salary());
         }
